@@ -1,0 +1,11 @@
+node_modules
+
+# Gizli Anahtarlar
+.env
+
+# Python sanal ortam klasörü
+venv/
+
+# Node/Next.js bağımlılıkları
+node_modules/
+.next/

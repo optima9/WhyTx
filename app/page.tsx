@@ -51,12 +51,14 @@ export default function Home() {
       {/* --- INPUT AND BUTTON --- */}
       <div className="w-full max-w-2xl">
         <input
-          type="text"
-          value={txHash}
-          onChange={(e) => setTxHash(e.target.value)}
-          placeholder="Paste Sepolia transaction hash (e.g., 0x...)"
-          className="w-full p-4 text-black rounded-lg border border-gray-600"
-        />
+  type="text"
+  value={txHash}
+  onChange={(e) => setTxHash(e.target.value)}
+  placeholder="Paste Sepolia transaction hash (e.g., 0x...)"
+  // Yeni sınıflar burada: text-white yazdığınız metni beyaz yapar,
+  // placeholder-gray-400 ise placeholder'ı daha net görünür yapar.
+  className="w-full p-4 text-white placeholder-gray-400 rounded-lg border border-gray-600 bg-gray-700"
+/>
         <button
           onClick={analyzeTx}
           disabled={isLoading}

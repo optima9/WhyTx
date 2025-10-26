@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+
 from flask import Flask, request, jsonify
 from web3 import Web3
 from openai import OpenAI
